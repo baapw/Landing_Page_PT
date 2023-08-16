@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="src/input.css">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <style>
+      *{
+        /* border: 1px red solid; */
+      }
+    </style>
+</head>
+<body>
+  <!-- <header class="sticky top-0">
+    <nav class="shadow-xl font-title bg-white">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="dist/img/logodrb.png"
+              class="h-14 mr-3 inline"
+              alt="logodrb"
+            />
+            <span
+              class="self-center text-3xl font-extrabold whitespace-nowrap text-black"
+              >PT. Dewa Ruci Bersemi</span
+            >
+          </a>
+          <span class="text-3xl cursor-pointer mx-5 md:hidden block">
+            <ion-icon name="grid-outline" onclick="Menu(this)" class="text-black"></ion-icon>
+          </span>
+          <div class="w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              id="hamburger-menu"
+              class="md:flex md:items-center z-[1] md:z-auto md:static absolute text-black w-full bg-white/20 bg-clip-padding backdrop-filter backdrop-blur-sm drop-shadow-2xl top-20 left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 transition-all ease-in duration-500"
+            >
+              <li class="mx-5 my-4 md:my-0 rounded-full md:text-black w-28 border-2 hover:border-RED border-black text-center">
+                <a href="#" class=" text-xl font-bold hover:text-BLUE duration-200"
+                  >About Us</a
+                >
+              </li>
+              <li class="mx-5 my-4 md:my-0  rounded-full md:text-black w-24 text-center">
+                <a href="#" class="text-xl font-bold hover:text-BLUE duration-200"
+                  >Support</a
+                >
+              </li>
+              <li class="mx-5 my-4 md:my-0 md:bg-black rounded-full md:text-white w-20 text-center">
+                <a href="#" class="text-xl font-bold hover:text-RED duration-200"
+                  >Login</a
+                >
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> -->
+
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-2xl lg:text-3xl font-title text-black block py-6">PT. Dewa Ruci Bersemi</a>
+          </div>
+          <div class="flex items-center px-4">
+
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-xl rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="text-base lg:text-xl font-body text-slate-900 py-2 mx-8 flex group-hover:text-RED">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="text-base lg:text-xl font-body text-slate-900 py-2 mx-8 flex group-hover:text-RED">About</a>
+                </li>
+                <li class="group">
+                  <a href="#content_1" class="text-base lg:text-xl font-body text-slate-900 py-2 mx-8 flex group-hover:text-RED">Benefit</a>
+                </li>
+                <li class="group">
+                  <a href="#content_2" class="text-base lg:text-xl font-body text-slate-900 py-2 mx-8 flex group-hover:text-RED">Skema</a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="text-base lg:text-xl font-body text-slate-900 py-2 mx-8 flex group-hover:text-RED">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Home Start -->
+    <section class="lg:py-36 py-32 bg-slate-50" id="home">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-RED font-body">Ternak Ayam Jadi Lebih Mudah dan Menguntungkan</h1>
+            <p class="leading-relaxed mb-10">Berternak tanpa perlu repot karena mendapat dukungan penuh dari tim kami, sehingga hasil panen meningkat hanya dengan bergabung bersama kami!</p>
+              <a href="#" class="text-base font-semibold px-8 py-3 shadow-xl text-black border-black border-2 rounded-full hover:bg-black hover:text-white transition duration-300 ease-in-out">PELAJARI!</a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2"">
+            <div class="mt-10 lg:mt-9 lg:right-0">
+              <img src="dist/img/peternak.png" alt="" class="max-w-full mx-auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home End -->
+
+
+    <!-- About Start -->
+    <section class="lg:py-36 py-10 bg-slate-300" id="about">
+      <div class="container">
+        <h1 class="text-BLUE text-center text-2xl md:text-3xl lg:text-4xl font-bold font-body py-20">Tentang Kami</h1>
+        <div class="flex flex-wrap">
+          <div class="w-full px-10 lg:w-1/2 "> 
+              <p class="leading-relaxed mb-10 text-black text-xl lg:max-w-3xl lg:ml-40 lg:mt-5 font-semibold">Perusahaan peternakan modern berbasis teknologi IoT yang berkomitmen mengoptimalkan profit peternak Indonesia melalui penyediaan sapronak berkualitas, dukungan proses produksi dengan teknologi, riset dan tim ahli, serta jaminan pembelian hasil panen yang kompetitif.</p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <div class="mt-10 lg:mt-0">
+              <img src="dist/img/DOC.png" alt="" class="max-w-full w-1/3 mx-auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Content 1 Start -->
+    <section class="lg:py-36 py-10 bg-slate-500" id="content_1">
+      <div class="container">
+        <div class="flex flex-wrap">
+
+          <!-- 1 -->
+          <div class="w-full px-6 lg:px-24 lg:py-16 lg:w-1/3"> 
+              <h2 class="text-RED font-body font-semibold text-xl lg:text-2xl py-3">Apa Yang Kami Tawarkan?</h2>
+              <h1 class="text-2xl font-body max-w-xs lg:text-5xl lg:max-w-sm py-3">Manfaat Bergabung Bersama Kami</h1>
+              <p class="mb-5 text-black font-semibold font-body py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum molestiae hic commodi minima fugiat omnis architecto assumenda dolorem. Voluptatibus, quos veniam beatae quia dicta inventore eum dolore voluptas aliquid eaque.</p>
+              <ul>
+                <li  class="flex flex-wrap gap-3">
+                  <span class="text-3xl justify-center items-center">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  </span>
+                  <p class="text-xl font-semibold">Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li  class="flex flex-wrap gap-3">
+                  <span class="text-3xl justify-center items-center">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  </span>
+                  <p class="text-xl font-semibold">Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li  class="flex flex-wrap gap-3">
+                  <span class="text-3xl justify-center items-center">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  </span>
+                  <p class="text-xl font-semibold">Lorem ipsum dolor sit amet.</p>
+                </li>
+              </ul>
+          </div>
+
+          <!-- 2 -->
+          <div class="w-full lg:w-1/3 lg:py-10">
+            <div class="m-10 max-w-xl lg:max-w-sm mx-auto">
+              <div class="bg-slate-300 shadow-xl rounded-lg">
+                <h3 class="text-xl lg:text-2xl py-2 lg:py-2 font-body text-orange-500 mx-5">Sapronak Berkualitas Tinggi</h3>
+                <p class="font-body mx-5 lg:py-2">Lorem ipsum dolor sit amet.</p>
+                <div class="flex flex-wrap">
+                  <span class="lg:w-1/3">
+                    <img src="dist/img/icon_1.png" alt="" class="">
+                  </span>
+                  <h4 class="w-1/2 py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur animi, explicabo voluptatibus modi quasi dolore.</h4>
+                </div>
+              </div>
+            </div>
+            <div class="m-10 max-w-xl lg:max-w-sm mx-auto">
+              <div class="bg-slate-300 shadow-xl rounded-lg">
+                <h3 class="text-xl lg:text-2xl py-2 lg:py-2 font-body text-orange-500 mx-5">Sapronak Berkualitas Tinggi</h3>
+                <p class="font-body mx-5 lg:py-2">Lorem ipsum dolor sit amet.</p>
+                <div class="flex flex-wrap">
+                  <span class="lg:w-1/3">
+                    <img src="dist/img/icon_1.png" alt="" class="">
+                  </span>
+                  <h4 class="w-1/2 py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur animi, explicabo voluptatibus modi quasi dolore.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="w-full lg:w-1/3 lg:py-10">
+            <div class="lg:m-10 max-w-xl lg:max-w-sm mx-auto">
+              <div class="bg-slate-300 shadow-xl rounded-lg">
+                <h3 class="text-xl lg:text-2xl py-2 lg:py-2 font-body text-orange-500 mx-5">Sapronak Berkualitas Tinggi</h3>
+                <p class="font-body mx-5 lg:py-2">Lorem ipsum dolor sit amet.</p>
+                <div class="flex flex-wrap">
+                  <span class="lg:w-1/3">
+                    <img src="dist/img/icon_1.png" alt="" class="">
+                  </span>
+                  <h4 class="w-1/2 py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur animi, explicabo voluptatibus modi quasi dolore.</h4>
+                </div>
+              </div>
+            </div>
+            <div class="lg:m-10 m-10 max-w-xl lg:max-w-sm mx-auto">
+              <div class="bg-slate-300 shadow-xl rounded-lg">
+                <h3 class="text-xl lg:text-2xl py-2 lg:py-2 font-body text-orange-500 mx-5">Sapronak Berkualitas Tinggi</h3>
+                <p class="font-body mx-5 lg:py-2">Lorem ipsum dolor sit amet.</p>
+                <div class="flex flex-wrap">
+                  <span class="lg:w-1/3">
+                    <img src="dist/img/icon_1.png" alt="" class="">
+                  </span>
+                  <h4 class="w-1/2 py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur animi, explicabo voluptatibus modi quasi dolore.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content 1 End -->
+
+
+    <!-- Content 2 Start -->
+    <section class="lg:py-36 py-10 bg-slate-700" id="content_2">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-5 lg:w-1/2 py-5">
+            <h1 class="text-slate-50 text-3xl font-bold font-body lg:text-5xl">Skema Kerja Sama</h1>
+            <ul class="text-slate-50 font-body text-xl lg:text-2xl">
+              <li class="my-5"><span class="text-RED">1. Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Incidunt quaerat voluptatibus mollitia, vero odio magni et atque voluptatum doloribus laudantium!</li>
+              <li class="my-5"><span class="text-RED">2. Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Incidunt quaerat voluptatibus mollitia, vero odio magni et atque voluptatum doloribus laudantium!</li>
+            </ul>
+          </div>
+          
+          <div class="w-full self-center px-5 lg:w-1/2 py-5">
+            <h1 class="text-slate-50 text-3xl font-bold font-body lg:text-5xl">Syarat Join Bersama Kami</h1>
+            <ul class="text-slate-50 font-body text-xl lg:text-2xl">
+              <li class="my-5"><span class="text-RED">1. Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Incidunt quaerat voluptatibus mollitia, vero odio magni et atque voluptatum doloribus laudantium!</li>
+              <li class="my-5"><span class="text-RED">2. Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Incidunt quaerat voluptatibus mollitia, vero odio magni et atque voluptatum doloribus laudantium!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content 2 End -->
+
+    <!-- Close Start -->
+    <section class="lg:py-36 py-10 bg-slate-900" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <div class="font-body text-slate-50">
+            <h1 class="font-semibold text-2xl py-5 lg:text-5xl">Jadi Partner Kami</h1>
+            <p class="text-xl py-5 lg:text-2xl">Bergabung Bersama Kami, PT.Dewa Ruci Bersemi Untuk Mendapatkan Lebih Banyak Kemudahan dan Keuntungan</p>
+            <p class="text-xl py-5 lg:text-2xl">Hubungi Kami Melalui WhatsApp Sekarang!!</p>
+          </div>
+          <div class="font-body text-slate-50 py-10">
+            <button class="bg-green-500 rounded-full px-5 py-2 shadow-lg border-2 border-white hover:bg-green-600 hover:border-slate-50 hover:text-white"><a target="_blank" href="https://api.whatsapp.com/send?phone=6285786337935">Hubungi Kami</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Close End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-slate-950 pt-20 pb-20">
+      <div class="container">
+        <div class="w-full pt-10 border-t border-slate-700">
+          <p class="font-body text-lg text-slate-100 text-center">Copyright © 2023 DRB. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    
+      <script src="dist/script.js"></script>
+</body>
+</html>
